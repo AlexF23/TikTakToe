@@ -40,13 +40,17 @@ public class TikTakToe {
      */
     public static void main(String[] args) {
        String[][] gridArray = setupGridArray();
-        for (int row=0; row<gridArray.length; row++) {
+       displayGrid(gridArray);
+       displayGrid(gridArray);
+              
+        }
+    public static void displayGrid(String[][] gridArray) {
+         for (int row=0; row<gridArray.length; row++) {
             for (int col=0; col< gridArray[row].length; col++) {
                 System.out.print(gridArray[row][col]);
             }
             System.out.println("");
-                 
-        }
+         }
     }
     
 }
